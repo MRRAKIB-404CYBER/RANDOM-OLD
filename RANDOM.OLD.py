@@ -348,7 +348,7 @@ def free(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ K4US4R ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ RAKIB ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -398,11 +398,11 @@ logo = ("""
                                     
    \x1b[1;92m╔═════════════════════════════╗
    \x1b[1;92m║➣TOOL NAME : {OLD CLONE  }   ║
-   \x1b[1;92m║➣AUTHOR    : ARIYAN AHMMED RAKIB     ║
-   \x1b[1;92m║➣WHATSAPP    : +9960531382117║
+   \x1b[1;92m║➣AUTHOR    : ARIYAN AHMMED ║
+   \x1b[1;92m║➣WHATSAPP    : 0531382117        ║
    \x1b[1;92m║➣FACEBOOK  : SAIFUL HASAN   ║
-   \x1b[1;92m║➣Group     : TERMUX COMMAD 2022 ║
-   \x1b[1;92m║➣WHATSAPP  : [ ITZ ARIYAN RAKIB]       ║
+   \x1b[1;92m║➣Group     : TERMUX COMMAD   ║
+   \x1b[1;92m║➣WHATSAPP  : [ ARIYAN]            ║
    \x1b[1;92m╚═════════════════════════════╝""")
 
 class Main:
